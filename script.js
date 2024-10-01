@@ -71,13 +71,6 @@ function showCharacterDetails(character) {
   });
 }
 
-// Função para filtrar personagens
-function filterCharacters(name, race, gender) {
-  if (name === '' && race === '' && gender === '') {
-    // Se todos os campos estiverem vazios, renderiza os 10 primeiros personagens
-    renderCharacterList(allCharacters.slice(0, 10));
-    return;
-  }
 
   const filteredCharacters = allCharacters.filter(character => {
     const nameMatches = name === '' || character.name.toLowerCase().includes(name.toLowerCase());
