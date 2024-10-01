@@ -11,9 +11,9 @@ body {
 }
 
 header {
-    width: 100%; /* Largura total do cabeçalho */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
+    justify-content: center;
     margin-bottom: -20px;
     margin-top: -35px;
 }
@@ -51,7 +51,7 @@ input, select {
 }
 
 input:focus, select:focus {
-    border-color: #ff6f61; /* Cor do foco */
+    border-color: #ff6f61;
 }
 
 /* Estilo do botão */
@@ -103,7 +103,7 @@ li:nth-child(even) {
 
 li:hover {
     transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 /* Estilo das imagens */
@@ -113,7 +113,7 @@ img {
     border-radius: 5px;
     margin-bottom: 10px;
     object-fit: contain;
-    transition: transform 0.3s ease; /* Transição suave */
+    transition: transform 0.3s ease; 
 }
 
 /* Efeito de crescimento na imagem ao passar o mouse */
@@ -154,7 +154,7 @@ button.favorite {
     margin: 0;
     display: flex; /* Exibe itens lado a lado */
     flex-wrap: wrap; /* Permite quebra de linha */
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center; 
 }
 
 #favorites-list li {
@@ -162,13 +162,13 @@ button.favorite {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    margin: 5px; /* Espaço entre os itens */
-    width: auto; /* Ajusta a largura automaticamente */
+    margin: 5px;
+    width: auto;
 }
 
 /* Estilo da imagem dos favoritos */
 #favorites-list li img {
-    width: 100px; /* Tamanho da imagem dentro dos favoritos */
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 10px;
@@ -206,7 +206,7 @@ button.favorite {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centralizando */
+    transform: translate(-50%, -50%); /* Centralizar */
     background-color: rgba(150, 207, 16, 0.9); 
     border: 2px solid #333; 
     border-radius: 10px; 
@@ -223,22 +223,22 @@ button.favorite {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 260px; /* Largura total do pop-up */
-    height: 300px; /* Altura automática */
-    border-radius: 10px; /* Cantos arredondados */
+    width: 260px; 
+    height: 300px; 
+    border-radius: 10px; 
     margin-bottom: 10px;
 }
 
 /* Títulos do pop-up */
 .character-details-popup h2 {
     margin: 10px 0;
-    color: #333; /* Cor do texto */
+    color: #333; 
 }
 
 /* Parágrafos do pop-up */
 .character-details-popup p {
     margin: 5px 0;
-    line-height: 1.5; /* Melhor legibilidade */
+    line-height: 1.5; /* Para poder ler melhor */
 }
 
 /* Estilo do botão de fechar */
@@ -247,9 +247,9 @@ button.favorite {
     top: 10px;
     right: 10px;
     font-size: 50px;
-    color: #000000; /* Cor do "X" */
+    color: #000000;
     cursor: pointer;
-    transition: color 0.3s ease; /* Efeito ao passar o mouse */
+    transition: color 0.3s ease;
 }
 
 .close-popup:hover {
@@ -260,16 +260,16 @@ button.favorite {
 .popup {
     display: none;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo com opacidade */
-    border: 2px solid #ff6f61; /* Bordas na cor dos botões */
-    border-radius: 10px; /* Cantos arredondados */
-    width: 80%; /* Ajusta a largura do pop-up */
-    max-width: 1000px; /* Largura máxima do pop-up */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid #ff6f61;
+    border-radius: 10px; 
+    width: 80%; 
+    max-width: 1000px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     z-index: 100;
-    transition: all 0.3s ease; /* Transição suave */
+    transition: all 0.3s ease; 
     overflow-y: auto; /* Habilita a rolagem vertical */
-    max-height: 60%; /* Limita a altura do pop-up a 80% da altura da tela */
+    max-height: 70%; /* Limita a altura do pop-up a 70% da altura da tela */
 }
 
 /* Conteúdo do pop-up de favoritos */
@@ -281,7 +281,7 @@ button.favorite {
 
 .popup-content h2 {
     margin-top: 0;
-    color: #333; /* Cor do título */
+    color: #333;
 }
 
 /* Botão de favoritos */
@@ -290,7 +290,7 @@ button.favorite {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px; /* Mais espaçamento no botão */
+    padding: 10px 20px;
     cursor: pointer;
     display: block;
     margin-top: 10px;
@@ -306,13 +306,13 @@ button.favorite {
 /* Responsividade */
 @media (max-width: 600px) {
     input, select {
-        width: 80%; /* Faz os elementos preencherem a largura total em telas pequenas */
-        margin: 5px 0; /* Margem vertical para espaçamento */
+        width: 80%; 
+        margin: 5px 0; 
     }
 
     button {
-        width: 80%; /* Botão ocupa toda a largura do contêiner */
-        margin-top: 10px; /* Espaçamento acima do botão */
+        width: 80%;
+        margin-top: 10px; 
     }
 
     #popup-favoritos {
@@ -324,12 +324,12 @@ button.favorite {
 
 @media (max-width: 400px) {
     header {
-        flex-direction: column; /* Muda a direção do cabeçalho para coluna */
-        align-items: center; /* Centraliza o conteúdo do cabeçalho */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .header-image {
-        width: 70%; /* Aumenta a largura da imagem no cabeçalho */
-        height: auto; /* Permite que a altura ajuste automaticamente */
+        width: 70%; 
+        height: auto;
     }
 }
