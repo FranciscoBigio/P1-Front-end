@@ -80,7 +80,6 @@ function showCharacterDetails(character) {
   });
   
   renderCharacterList(filteredCharacters);
-}
 
 // Adiciona eventos ao formulário de busca
 document.getElementById('search-form').addEventListener('submit', (event) => {
