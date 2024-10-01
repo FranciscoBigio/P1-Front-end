@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Ball Z</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<header>
+  <img src="https://logosmarcas.net/wp-content/uploads/2021/02/Dragon-Ball-Logo.png" alt="Dragon Ball Z Header" class="header-image">
+</header>
+
+<body>
+
+  <!-- Pop-up de Favoritos -->
+  <div id="favorites-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-popup" style="cursor: pointer; font-weight: bold;">&times;</span> <!-- O "X" para fechar -->
+      <h2>Favoritos</h2>
+      <ul id="favorites-list"></ul>
+    </div>
+  </div>
+
+  <!-- Formulário de Pesquisa -->
+  <form id="search-form">
+    <input type="text" id="name-search" placeholder="Pesquisar por nome">
+    
+    <select id="race-search">
+        <option value="">Raça</option>
+        <option value="Saiyan">Saiyajin</option>
+        <option value="Human">Humano</option>
+        <option value="Namekian">Namekian</option>
+        <option value="Android">Android</option>
+        <option value="Majin">Majin</option>
+        <option value="Frieza">Frieza</option>
+        <option value="Evil">Mal</option>
+        <option value="Angel">Anjo</option>
+        <option value="God">Deus</option>
+        <option value="Jiren Race">Raça Jiren</option>
+        <option value="Unknown">Desconhecido</option>
+        <option value="Nucleico benigno">Povo do Núcleo</option>
+        
+    </select>
+
+    <select id="gender-search">
+        <option value="">Gênero</option>
+        <option value="Male">Masculino</option>
+        <option value="Female">Feminino</option>
+    </select>
+    
+    <button type="submit">Pesquisar</button>
+</form> 
+
+  <div id="content">
+    <button id="favorites-button">Ver Favoritos</button> <!-- Botão para abrir os favoritos -->
+    <div id="character-section">
+      <h1>Personagens</h1>
+      <ul id="character-list"></ul>
+    </div>
+  </div>
+
+  <!-- Novo contêiner para exibir os detalhes do personagem -->
+  <div id="character-details" class="character-details-popup"></div>
+
+</body>
+  <script src="script.js"></script>
+</html>
